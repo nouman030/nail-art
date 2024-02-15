@@ -25,7 +25,7 @@
             <div class="lt">
                 <ul>
                     <li><a href="log-in.html">log-in</a></li>
-                    <li><a href="log-in.html">sign-in</a></li>
+                    <li><a href="sign-up.html">sign-in</a></li>
                 </ul>
                 
             </div>
@@ -42,14 +42,17 @@
 <br>
 <div class="box9">
         <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
+            <form>
+            <h2>Contact Us</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="msg" name="msg" required></textarea>
+            <p class="error"
+            id="invalid_email">
+      </p>
             <button type="submit" class="btn">Send</button>
         </form>
     </section>
@@ -60,6 +63,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

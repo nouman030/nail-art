@@ -233,10 +233,15 @@ h2{
 
 .home1 img{
     scale: 1.1;
-    transition: all ease 0.1s;
-    object-fit: contain;
-    object-position: center;
+    transition: all ease-in-out 200ms;
+    object-fit: cover;
+    object-position: top;
     width: 100%;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
 }
 
 .home1 img:hover{
@@ -402,7 +407,40 @@ footer {
     
 }
 
+.btn88{
+    width: 100%;
+}
+
 ::selection{
     color:brown;
     background-color: palevioletred;
 }
+
+#Checkbox{
+    width: 40%;
+}
+
+button:disabled{
+    background-color: darkgrey;
+}
+
+.chack{
+    display: flex;
+    border: 1.3px solid #000;
+    margin: 10px;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.box10{
+   padding: 70px;
+}
+
+form{
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+
