@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************************************************/
+
+body{
+    backdrop-filter: blur(100px);
+}
+/****************************************************/
+
+
+@font-face {
+    font-family: myfont;
+    src: url(./Abel-Regular.ttf);
+  }
+
+body{
+    background-image: url(./images/cute-preppy-youre-8000x4500-11579.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position:center;
+    font-family: 'myfont';
+    text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+
+
+nav{
+
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 7px pink;
+    backdrop-filter: blur(20px);
+    border-radius: 1px;
+    
+    padding: 15px;
+    margin-top: 15px auto;
+    
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav h1 a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 12vh;
+    font-family: none;
+    margin-bottom: 9px;
+    color: palevioletred;
+    text-decoration: none;
+}
+
+
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  color: black;
+  
+}
+
+nav ul a:hover{
+    color: palevioletred;
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.m-btn{
+    display: none;
+}
+
+.sidebar li{
+    width: 100%;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width:780px){
+    .hideOnMobile{
+        display: none;
+    }
+    .m-btn{
+        display: block;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    form {
+        margin: 70px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* Style for Hero Section */
+#hero {
+    /*background-image: url('./img/buti.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100vh;
+}
+
+#hero h1 {
+    font-size: 6.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+#hero p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#hero p h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+ 
+#hero .btn{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 2.4rem;
+}
+
+
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 60px;
+    
+}
+
+.home1{
+    margin: 50px 90px;
+    overflow: hidden;
+    width: 78%;
+    box-shadow: 0 0 7px 7px pink;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+.home2{
+    margin: 40px;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.home2 h1{
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.home2 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.home1 img{
+    scale: 1.1;
+    transition: all ease 0.1s;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.home1 img:hover{
+    filter: grayscale(1);
+    scale: 1.2;
+}
+
+img:hover{
+    filter: grayscale(1);
+}
+
+
+/* Style for Featured Artists Section */
+#featured-artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.artist {
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.artist img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.artist h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Style for Latest Albums Section */
+#latest-albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.album {
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.album img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.album h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.album p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Style for Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    border:1px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+
+
+
+button:hover {
+    background-color: #555;
+}
+
+
+#btn{
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+#btn:hover{
+    color: #000;
+}
+
+
+.subp{
+    margin-bottom: 50px;
+}
+
+#sdimg{
+    margin-left: 20%;
+    background: transparent;
+    filter: grayscale(1);
+}
+
+#img-s{
+   width: 100%;
+   height: 450px;
+   object-fit: cover;
+   object-position: top;
+}
+
+
+
+/* Style for Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    
+}
+
+::selection{
+    color:brown;
+    background-color: palevioletred;
+}

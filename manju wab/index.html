@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1><a href="index.html">Milina</a></h1>
+        <div class="top">
+            <div class="title">
+                <ul>
+                    
+                    <li class="hideOnMobile"><a href="index.html">home</a></li>
+                    <li class="hideOnMobile"><a href="about.html">about</a></li>
+                    <li class="hideOnMobile"><a href="Subscription.html">Subscription</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">contact</a></li>
+                    
+                    <li onclick="show()" class="m-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+            <div class="lt">
+                <ul>
+                    <li><a href="log-in.html">log-in</a></li>
+                    <li><a href="log-in.html">sign-in</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <ul class="sidebar">
+            <li onclick="hide()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="Subscription.html">Subscription</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+      
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="home">
+        <div class="home1">
+           <img src="./images/new2.webp" alt="">
+        </div>
+        <div class="home2">
+             <h1>Milina nail Salon Creating Beauty</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+            <a href="#" class="btn">Get Started</a></div>
+    </div>
+    <!-- Featured Artists Section -->
+    <h2>Meet Our Experts</h2>
+    <section id="featured-artists">
+        <div class="artist">
+            <img src="./images/blog1.jpg" alt="Artist 1">
+            <div class="meet">
+                <h3>Lonut</h3>
+                <p>Lorem ipsum dolor sit amet, iscing elit, sed do magna</p>
+             </div>
+        </div>
+        <div class="artist">
+            <img src="./images/blog2.jpg" alt="Artist 2">
+            <div class="meet">
+                <h3>Lonut</h3>
+                <p>Lorem ipsum dolor sit amet, iscing elit, sed do magna</p>
+             </div>
+        </div>
+        <div class="artist">
+            <img src="./images/blog3.jpg" alt="Artist 3">
+            <div class="meet">
+                <h3>Lonut</h3>
+                <p>Lorem ipsum dolor sit amet, iscing elit, sed do magna</p>
+             </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->con    <footer>
+        <p>&copy; 2024 nail Webpage</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
